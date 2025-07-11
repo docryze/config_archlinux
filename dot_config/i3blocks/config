@@ -1,0 +1,65 @@
+# i3blocks configuration file
+#
+# The i3blocks man page describes the usage of the binary,
+# and its website describes the configuration:
+#
+#     https://vivien.github.io/i3blocks
+
+
+# Global properties
+separator=true
+separator_block_width=30
+
+#[documentation]
+#full_text=Documentation
+#website=https://vivien.github.io/i3blocks
+#command=xdg-open "$website"
+#color=#f12711
+
+[wifi-name]
+command=iwctl station wlan0 show | grep "Connected network" | awk -F ' ' '{print "\uf1eb  " $3}'
+interval=once
+color=#55e026
+
+[wifi-rssi]
+command=iwctl station wlan0 show | grep "RSSI" | head -n 1 | awk -F ' ' '{print "\uf1eb  " $2}'
+interval=30
+color=#55e026
+#warning_color=#ffff00
+#critical_color=#ff0000
+#warning_threshold=-60
+#critical_threshold=-50
+
+#[wifi-tb]
+#command=iwctl station wlan0 show | grep "TxBitrate" | awk -F ' ' '{print $2}'
+#interval=10
+#label=↑
+#suffix=Kbit/s
+#color=#0068ff
+#
+#[wifi-rb]
+#command=iwctl station wlan0 show | grep "RxBitrate" | awk -F ' ' '{print $2}'
+#interval=10
+#label=↓
+#suffix=Kbit/s
+#color=#0068ff
+
+[disk-home]
+command=df -h /home | awk -F ' ' 'NR==2 { print "\uf02ca  /home["$4"]" }'
+interval=once
+color=#55e026
+
+[volume]
+command=pactl get-sink-volume @DEFAULT_SINK@ | awk -F ' ' '{print "\uf027  " $5}'
+interval=10
+color=#55e026
+
+[time]
+command= echo -e "\uf073  $(date '+%Y-%m-%d %H:%M')"
+interval=60
+color=#55e026
+
+[user]
+command=echo -e "\uf007  $USER"
+interval=once
+color=#55e026
