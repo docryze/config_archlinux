@@ -15,7 +15,7 @@ Plug 'tpope/vim-repeat'
 Plug 'preservim/nerdcommenter'
 "fzf
 Plug 'junegunn/fzf.vim'
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug '/usr/bin/fzf'
 "Use release branch (recommend)
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 "airline
@@ -66,7 +66,6 @@ let g:coc_global_extensions = [
 	\ 'coc-sh',
 	\ 'coc-vimlsp',
 	\ 'coc-json',
-    \ 'coc-go',
     \]
 
 set signcolumn=number

@@ -72,10 +72,10 @@ ZSH_THEME="robbyrussell"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
 	git
+    vi-mode
 	zsh-completions
 	zsh-syntax-highlighting	
 	zsh-autosuggestions
-    vi-mode
 )
 
 
@@ -128,11 +128,9 @@ export GOROOT=~/soft/go1.24.4
 export PATH=$GOROOT/bin:$PATH
 
 # pyenv
-export PYENV_ROOT="$HOME/soft/pyenv"
+export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init - zsh)"
 
 # nvm
-export NVM_DIR="$HOME/soft/nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+source /usr/share/nvm/init-nvm.sh
