@@ -78,7 +78,6 @@ exec --no-startup-id fcitx5 -d
 bindsym $mod+b exec --no-startup-id chromium --proxy-server="http://127.0.0.1:22339"
 #bindsym $mod+b exec --no-startup-id chromium
 #bindsym $mod+Shift+Up i3-msg "workspace 1;exec st -e bash -c '~/soft/config_archlinux/sync_config.sh && sleep 3'"
-bindsym $mod+Shift+Up exec --no-startup-id alacritty -e bash -c '~/soft/config_archlinux/sync_config.sh && sleep 3'
 
 bindsym $mod+Shift+t exec --no-startup-id alacritty --class FLOAT
 
