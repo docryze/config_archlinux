@@ -9,6 +9,8 @@ brower_soft_list="chromium"
 input_soft_list="adobe-source-han-sans-cn-fonts fcitx5-im fcitx5-chinese-addons"
 blue_soft_list="bluez bluez-utils"
 
+# pip soft
+# poetry
 
 # proxy list
 proxy_soft_list="pacman install v2ray"
