@@ -5,6 +5,16 @@ pre_soft_list="zsh git fzf"
 # file manager
 # lf
 
+# utils
+# moreutils bat iftop ncdu jq fastfetch
+# sdyk ?
+
+# preview
+# chafa glow
+
+# player
+# mpv
+
 # python node
 pyenv_soft_list="pyenv"
 nvm_soft_list="nvm"

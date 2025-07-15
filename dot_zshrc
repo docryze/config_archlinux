@@ -76,6 +76,7 @@ plugins=(
 	zsh-completions
 	zsh-syntax-highlighting	
 	zsh-autosuggestions
+    zsh-select-with-lf
 )
 
 
@@ -120,6 +121,9 @@ source $ZSH/oh-my-zsh.sh
 
 alias ncdu="ncdu -r"
 
+# editor
+export EDITOR=vim
+
 # proxy
 export http_proxy='http://127.0.0.1:22339'
 export https_proxy='http://127.0.0.1:22339'
@@ -140,6 +144,7 @@ eval "$(pyenv init - zsh)"
 # nvm
 source /usr/share/nvm/init-nvm.sh
 
-
+# lf
+export LF_BOOKMARK_PATH=~/.config/lf/bookmark
 
 source $HOME/.api_keys
