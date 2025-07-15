@@ -125,7 +125,7 @@ export http_proxy='http://127.0.0.1:22339'
 export https_proxy='http://127.0.0.1:22339'
 
 # script
-export SCRIPT_PATH=~/script
+export SCRIPT_PATH=~/workspace/script
 export PATH=$SCRIPT_PATH:$PATH
 
 # golang

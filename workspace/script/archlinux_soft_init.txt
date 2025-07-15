@@ -1,0 +1,22 @@
+#!/bin/bash
+# base soft
+pre_soft_list="zsh git fzf"
+
+# file manager
+# lf
+
+# python node
+pyenv_soft_list="pyenv"
+nvm_soft_list="nvm"
+
+# python program manager poetry
+#pip install poetry
+
+# brower fonts input blue
+brower_soft_list="chromium"
+input_soft_list="adobe-source-han-sans-cn-fonts fcitx5-im fcitx5-chinese-addons"
+blue_soft_list="bluez bluez-utils"
+
+# proxy list
+proxy_soft_list="pacman install v2ray"
+proxy_soft_list="pip install v2raysub"
