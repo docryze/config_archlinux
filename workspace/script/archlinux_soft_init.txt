@@ -7,7 +7,7 @@ pre_soft_list="zsh git fzf"
 
 # utils
 # moreutils bat iftop ncdu jq fastfetch
-# sdyk ?
+# dysk
 
 # preview
 # chafa glow
