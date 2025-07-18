@@ -132,6 +132,14 @@ export https_proxy='http://127.0.0.1:22339'
 export SCRIPT_PATH=~/workspace/script
 export PATH=$SCRIPT_PATH:$PATH
 
+# clangd
+export CLANGD_PATH=~/soft/clangd_20.1.8
+export PATH=$CLANGD_PATH/bin:$PATH
+
+# vcpkg
+export VCPKG_ROOT=~/.local/share/vcpkg
+export PATH=$VCPKG_ROOT:$PATH
+
 # golang
 export GOROOT=~/soft/go1.24.4
 export PATH=$GOROOT/bin:$PATH

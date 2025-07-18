@@ -61,11 +61,11 @@ let g:fzf_vim.buffers_options = '--style full --border-label " Open Buffers "'
 
 "coc-vim
 let g:coc_global_extensions = [
-	\ 'coc-marketplace',
-	\ 'coc-lists',
 	\ 'coc-sh',
 	\ 'coc-vimlsp',
 	\ 'coc-json',
+	\ 'coc-clangd',
+	\ 'coc-cmake',
 	\ 'coc-pyright',
     \]
 
